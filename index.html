@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Stopwatch</title>
+
+    <!-- Font Awesome -->
+    <link
+        rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <div class="stopwatch-card">
+
+        <!-- Header -->
+        <div class="header">
+            <h1>Simple Timer App</h1>
+        </div>
+
+
+        <!-- Timer Circle -->
+        <div class="timer-circle">
+
+            <div class="timer-inner">
+
+                <h2 id="timerdisplay">00:00:00</h2>
+
+                <p>ELAPSED TIME</p>
+
+            </div>
+
+        </div>
+
+
+        <!-- Main Controls -->
+        <div class="controls">
+
+            <!-- Reset -->
+            <button id="clear" class="control-btn secondary-btn" title="Reset">
+                <i class="fa-solid fa-rotate-left"></i>
+            </button>
+
+
+            <!-- Start -->
+            <button id="start" class="control-btn start-btn" title="Start">
+                <i class="fa-solid fa-play"></i>
+            </button>
+
+
+            <!-- Stop -->
+            <button id="stop" class="control-btn secondary-btn" title="Stop">
+                <i class="fa-solid fa-stop"></i>
+            </button>
+
+        </div>
+
+
+        <!-- Save Button -->
+        <button id="store" class="save-btn" title="Save time">
+            <i class="fa-solid fa-bookmark"></i>
+        </button>
+
+
+        <!-- Stored Times -->
+        <div class="stored-times">
+
+            <div class="section-title">
+                <span>Saved Times</span>
+                <span id="lap-count">0/5</span>
+            </div>
+
+            <ul id="listlap"></ul>
+
+        </div>
+
+
+        <p class="footer">
+            HTML • CSS • JavaScript
+        </p>
+
+    </div>
+
+
+    <script src="script.js"></script>
+
+</body>
+
+</html>
